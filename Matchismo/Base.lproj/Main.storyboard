@@ -23,10 +23,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piM-tT-CqV">
-                                <rect key="frame" x="92" y="214" width="137" height="212"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
-                                <state key="normal">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piM-tT-CqV">
+                                <rect key="frame" x="94" y="180" width="133" height="184"/>
+                                <state key="normal" backgroundImage="cardback">
                                     <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -47,4 +46,7 @@
             <point key="canvasLocation" x="-61" y="-76"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cardback" width="45" height="45"/>
+    </resources>
 </document>

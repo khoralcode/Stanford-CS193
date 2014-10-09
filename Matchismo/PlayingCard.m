@@ -21,7 +21,7 @@
 
 + (NSArray *) validSuits
 {
-      return @[@"h",@"c",@"d",@"s"];
+      return @[@"♥️",@"♣️",@"♦️",@"♠️"];
 }
 
 -(void)setSuit:(NSString *)suit
