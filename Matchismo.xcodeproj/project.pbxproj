@@ -11,6 +11,7 @@
 		5253248419E7098C0069CDD0 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5253247E19E7098C0069CDD0 /* Deck.m */; };
 		5253248519E7098C0069CDD0 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5253248019E7098C0069CDD0 /* PlayingCard.m */; };
 		5253248619E7098C0069CDD0 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 5253248219E7098C0069CDD0 /* PlayingCardDeck.m */; };
+		5253248919E741FC0069CDD0 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5253248819E741FC0069CDD0 /* CardMatchingGame.m */; };
 		52B5999519E61B9800BD1153 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B5999419E61B9800BD1153 /* main.m */; };
 		52B5999819E61B9800BD1153 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B5999719E61B9800BD1153 /* AppDelegate.m */; };
 		52B5999B19E61B9800BD1153 /* Matchismo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52B5999919E61B9800BD1153 /* Matchismo.xcdatamodeld */; };
@@ -40,6 +41,8 @@
 		5253248019E7098C0069CDD0 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
 		5253248119E7098C0069CDD0 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
 		5253248219E7098C0069CDD0 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
+		5253248719E741FC0069CDD0 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = Model/CardMatchingGame.h; sourceTree = SOURCE_ROOT; };
+		5253248819E741FC0069CDD0 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Model/CardMatchingGame.m; sourceTree = SOURCE_ROOT; };
 		52B5998F19E61B9800BD1153 /* Matchismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52B5999319E61B9800BD1153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52B5999419E61B9800BD1153 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -138,6 +141,8 @@
 		52B599D619E642E700BD1153 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5253248719E741FC0069CDD0 /* CardMatchingGame.h */,
+				5253248819E741FC0069CDD0 /* CardMatchingGame.m */,
 				5253247B19E7098C0069CDD0 /* Card.h */,
 				5253247C19E7098C0069CDD0 /* Card.m */,
 				5253247D19E7098C0069CDD0 /* Deck.h */,
@@ -253,6 +258,7 @@
 				5253248319E7098C0069CDD0 /* Card.m in Sources */,
 				5253248619E7098C0069CDD0 /* PlayingCardDeck.m in Sources */,
 				52B5999B19E61B9800BD1153 /* Matchismo.xcdatamodeld in Sources */,
+				5253248919E741FC0069CDD0 /* CardMatchingGame.m in Sources */,
 				5253248519E7098C0069CDD0 /* PlayingCard.m in Sources */,
 				52B5999819E61B9800BD1153 /* AppDelegate.m in Sources */,
 				52B5999E19E61B9800BD1153 /* ViewController.m in Sources */,
