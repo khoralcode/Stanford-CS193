@@ -44,6 +44,7 @@
 
 static const int MISMATCH_PENALTY = 2;
 static const int MATCH_BONUS = 4;
+static const int COST_TO_CHOOSE = 1;
 
 - (void) chooseCardAtIndex: (NSUInteger)index
 {
@@ -62,11 +63,12 @@ static const int MATCH_BONUS = 4;
                     }else {
                         self.score -= MISMATCH_PENALTY;
                         otherCard.chosen = NO;
-                        
                     }
-                }
                 break;
+                }
             }
+            self.score -= COST_TO_CHOOSE;
+            card.chosen = YES;
         }
     }
 }
@@ -77,8 +79,18 @@ static const int MATCH_BONUS = 4;
     self.cards [index]:nil;
  }
 
-
-
+-(void) resetGame
+{
+    
+    for (Card *otherCard in self.cards){
+        if (otherCard.isChosen || otherCard.isMatched){
+                //card.matched = NO;
+                otherCard.matched =NO;
+            otherCard.chosen =NO;
+}               self.score =0;
+   
+}
+}
 -(instancetype)init
 {
         return nil;

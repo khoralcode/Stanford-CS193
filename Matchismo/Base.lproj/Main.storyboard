@@ -17,17 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piM-tT-CqV">
-                                <rect key="frame" x="16" y="14" width="60" height="90"/>
-                                <state key="normal" backgroundImage="cardback">
-                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9f3-PE-2Pp"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phD-Nk-Xs0">
-                                <rect key="frame" x="249" y="14" width="60" height="90"/>
+                                <rect key="frame" x="190" y="14" width="50" height="69"/>
                                 <state key="normal" backgroundImage="cardback">
                                     <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -36,7 +27,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l88-lp-DWE">
-                                <rect key="frame" x="16" y="126" width="60" height="90"/>
+                                <rect key="frame" x="16" y="91" width="47" height="67"/>
                                 <state key="normal" backgroundImage="cardback">
                                     <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -45,7 +36,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cae-Gb-PDL">
-                                <rect key="frame" x="249" y="126" width="60" height="90"/>
+                                <rect key="frame" x="131" y="91" width="51" height="67"/>
                                 <state key="normal" backgroundImage="cardback">
                                     <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -54,7 +45,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uge-ND-iMy">
-                                <rect key="frame" x="16" y="231" width="60" height="90"/>
+                                <rect key="frame" x="16" y="165" width="47" height="69"/>
                                 <state key="normal" backgroundImage="cardback">
                                     <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -63,7 +54,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02K-Fn-utG">
-                                <rect key="frame" x="249" y="231" width="60" height="90"/>
+                                <rect key="frame" x="249" y="91" width="55" height="67"/>
                                 <state key="normal" backgroundImage="cardback">
                                     <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -71,35 +62,8 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5d1-0V-zeK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehu-gN-WLD">
-                                <rect key="frame" x="95" y="14" width="60" height="90"/>
-                                <state key="normal" backgroundImage="cardback">
-                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oWP-lB-DS4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cD-33-DnT">
-                                <rect key="frame" x="95" y="126" width="60" height="90"/>
-                                <state key="normal" backgroundImage="cardback">
-                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9hy-HM-7MZ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkV-ru-uFA">
-                                <rect key="frame" x="95" y="231" width="60" height="90"/>
-                                <state key="normal" backgroundImage="cardback">
-                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oLe-dm-QWE"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4me-uQ-t1R">
-                                <rect key="frame" x="173" y="14" width="60" height="90"/>
+                                <rect key="frame" x="132" y="14" width="50" height="69"/>
                                 <state key="normal" backgroundImage="cardback">
                                     <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -108,7 +72,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wc1-Rv-CWl">
-                                <rect key="frame" x="173" y="126" width="60" height="90"/>
+                                <rect key="frame" x="249" y="14" width="55" height="69"/>
                                 <state key="normal" backgroundImage="cardback">
                                     <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -117,7 +81,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAX-GQ-wfc">
-                                <rect key="frame" x="173" y="231" width="60" height="90"/>
+                                <rect key="frame" x="190" y="91" width="50" height="67"/>
                                 <state key="normal" backgroundImage="cardback">
                                     <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -125,15 +89,243 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NlA-cI-qmM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehu-gN-WLD">
+                                <rect key="frame" x="74" y="14" width="49" height="69"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oWP-lB-DS4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cD-33-DnT">
+                                <rect key="frame" x="74" y="91" width="49" height="67"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9hy-HM-7MZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkV-ru-uFA">
+                                <rect key="frame" x="75" y="166" width="48" height="68"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oLe-dm-QWE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1S-Dk-l61">
+                                <rect key="frame" x="16" y="527" width="190" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piM-tT-CqV">
+                                <rect key="frame" x="16" y="14" width="47" height="69"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9f3-PE-2Pp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlU-UO-2we">
+                                <rect key="frame" x="190" y="242" width="50" height="69"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Hk0-L7-2oc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyH-UH-JdK">
+                                <rect key="frame" x="16" y="319" width="47" height="67"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="k03-kj-vOP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrY-zt-aRL">
+                                <rect key="frame" x="131" y="319" width="51" height="67"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="d6c-xC-Saz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLR-zA-9aY">
+                                <rect key="frame" x="249" y="319" width="55" height="67"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="I9D-c0-aU6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8A-PT-h15">
+                                <rect key="frame" x="132" y="242" width="50" height="69"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Djz-J3-aIf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dl1-NP-opw">
+                                <rect key="frame" x="249" y="242" width="55" height="69"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hHv-ab-8AH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pg-g9-6qA">
+                                <rect key="frame" x="189" y="166" width="50" height="69"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="anW-fL-qOf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6j-S8-AHh">
+                                <rect key="frame" x="248" y="166" width="55" height="69"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9ys-jB-FAB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="les-5T-B7v">
+                                <rect key="frame" x="190" y="319" width="50" height="67"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JFp-m2-hlH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJO-eF-uaG">
+                                <rect key="frame" x="74" y="242" width="49" height="69"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="z9c-ZU-98c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkL-fW-Djn">
+                                <rect key="frame" x="74" y="319" width="49" height="67"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3ur-va-ogq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SA3-gR-AgK">
+                                <rect key="frame" x="16" y="394" width="47" height="67"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ioI-s0-aRs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hc9-51-sVP">
+                                <rect key="frame" x="131" y="394" width="51" height="67"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BmY-kN-yoH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5d-Td-Oxx">
+                                <rect key="frame" x="249" y="394" width="55" height="67"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Q8B-ve-fr6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uer-VB-sEw">
+                                <rect key="frame" x="190" y="394" width="50" height="67"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zeT-hh-uZX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wf9-8Q-2nB">
+                                <rect key="frame" x="74" y="394" width="49" height="67"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UG9-be-9Uz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPS-tz-alR">
+                                <rect key="frame" x="16" y="242" width="47" height="69"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="m3I-jx-MBn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moW-WI-ZI6">
+                                <rect key="frame" x="214" y="518" width="98" height="30"/>
+                                <state key="normal" title="Reset Game">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Dzj-yn-zAr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfW-VW-2BV">
+                                <rect key="frame" x="131" y="165" width="50" height="69"/>
+                                <state key="normal" backgroundImage="cardback">
+                                    <color key="titleColor" red="0.0081539040149999995" green="0.023995535710000002" blue="0.0081371911889999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Pdb-dW-Zpg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.27746299625667409" green="0.81652582908163263" blue="0.2768942882267828" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="A1S-Dk-l61" id="hPH-uW-Zau"/>
+                        <outletCollection property="cardButtons" destination="Uge-ND-iMy" id="g89-r0-j3x"/>
+                        <outletCollection property="cardButtons" destination="l88-lp-DWE" id="6GW-tt-OCj"/>
+                        <outletCollection property="cardButtons" destination="piM-tT-CqV" id="ge5-Sd-bhq"/>
+                        <outletCollection property="cardButtons" destination="ehu-gN-WLD" id="LGA-GZ-gGl"/>
+                        <outletCollection property="cardButtons" destination="6cD-33-DnT" id="1Xf-yQ-ZYP"/>
+                        <outletCollection property="cardButtons" destination="gkV-ru-uFA" id="yP3-L4-aIT"/>
+                        <outletCollection property="cardButtons" destination="PAX-GQ-wfc" id="E4g-HA-LnG"/>
+                        <outletCollection property="cardButtons" destination="wc1-Rv-CWl" id="71j-Ur-V6b"/>
+                        <outletCollection property="cardButtons" destination="4me-uQ-t1R" id="T6C-vU-oT5"/>
+                        <outletCollection property="cardButtons" destination="phD-Nk-Xs0" id="fuD-SK-Nb5"/>
+                        <outletCollection property="cardButtons" destination="cae-Gb-PDL" id="fxb-RN-4zJ"/>
+                        <outletCollection property="cardButtons" destination="02K-Fn-utG" id="wd6-Tm-2ti"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-61" y="-76"/>
+            <point key="canvasLocation" x="-1426" y="-240"/>
         </scene>
     </scenes>
     <resources>
