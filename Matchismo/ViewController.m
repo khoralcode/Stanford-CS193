@@ -28,6 +28,8 @@
        else
        {_gameMode = 3;}
     
+  
+    
 }
 
 - (IBAction)resetButton:(UIButton *)sender
@@ -40,7 +42,9 @@
      
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: 0"];
         cardButton.enabled = YES;
-        
+        _outcometext.text = @"";
+        if (self.game.score)
+        { _s2CardOr3Card.enabled = YES;}
     }return [self.game resetGame];
 }
 - (CardMatchingGame *)game
@@ -72,7 +76,15 @@
         cardButton.enabled = !card.isMatched;
     }
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %ld",(long)self.game.score];
-    
+    self.outcometext.text = [NSString stringWithFormat:@"%@",self.game.pickResult];
+    if (self.game.score)
+        _s2CardOr3Card.enabled = NO;
+   
+}
+-(UILabel *)outcometext:(NSString*)picResult
+{
+    _outcometext.text = picResult;
+    return _outcometext;
 }
 -(NSString *)titleForCard:(Card *) card
 {

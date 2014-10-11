@@ -12,11 +12,13 @@
 @property (nonatomic, readwrite)NSInteger score;
 @property (nonatomic, strong) NSMutableArray *cards; //ofcards
 @property (nonatomic) int gameMode; // Y for 2 N for 3 card match game
+@property (nonatomic) NSString *pickResult;
 
 @end
 
 
 @implementation CardMatchingGame
+
 
 
 - (NSMutableArray *)cards
@@ -51,11 +53,17 @@ static const int COST_TO_CHOOSE = 1;
 {
     Card *card = [self cardAtIndex:index];
     if (!card.isMatched) {
-        if (card.isChosen){card.chosen = NO;
+        if (card.isChosen){
+          
+        card.chosen = NO;
         }else{
                             // match against other card
             for (Card *otherCard in self.cards){
+                _pickResult = [NSString stringWithFormat:@"%@", [card contents]];
                 if (otherCard.isChosen && !otherCard.isMatched){
+   _pickResult = [NSString stringWithFormat:@"%@ & %@ NO match, 2pt penalty", [otherCard contents],[card contents]];
+                   // else {_pickResult = ""};
+                
                     int matchScore = [card match:@[otherCard]];
                     if (matchScore){
                         self.score += matchScore * MATCH_BONUS;
@@ -90,10 +98,11 @@ static const int COST_TO_CHOOSE = 1;
     
     for (Card *otherCard in self.cards){
         if (otherCard.isChosen || otherCard.isMatched){
-                //card.matched = NO;
                 otherCard.matched =NO;
             otherCard.chosen =NO;
-}               self.score =0;
+               self.score =0;
+       
+  }
    
 }
 }
