@@ -11,12 +11,13 @@
 @interface CardMatchingGame ()
 @property (nonatomic, readwrite)NSInteger score;
 @property (nonatomic, strong) NSMutableArray *cards; //ofcards
-
+@property (nonatomic) int gameMode; // Y for 2 N for 3 card match game
 
 @end
 
 
 @implementation CardMatchingGame
+
 
 - (NSMutableArray *)cards
 {
@@ -78,6 +79,11 @@ static const int COST_TO_CHOOSE = 1;
     return (index < [self.cards count])?
     self.cards [index]:nil;
  }
+
+-(int) gameMode
+{
+    return _gameMode;
+}
 
 -(void) resetGame
 {

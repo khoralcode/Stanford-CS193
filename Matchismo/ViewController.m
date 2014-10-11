@@ -14,11 +14,21 @@
 @property (nonatomic, strong) CardMatchingGame *game;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
-
+@property (weak, nonatomic) IBOutlet UILabel *outcometext;
+@property (weak, nonatomic) IBOutlet UISwitch *s2CardOr3Card;
+@property (nonatomic) int gameMode;
 
 @end
 
 @implementation ViewController
+
+-(IBAction)s2CardOr3Card:(id)sender 
+{
+    if (!sender) {_gameMode = 2;}
+       else
+       {_gameMode = 3;}
+    
+}
 
 - (IBAction)resetButton:(UIButton *)sender
 {
