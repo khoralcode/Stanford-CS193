@@ -98,12 +98,10 @@
 		52B5999119E61B9800BD1153 /* Matchismo */ = {
 			isa = PBXGroup;
 			children = (
-				52B599D619E642E700BD1153 /* Model */,
-				52B5999619E61B9800BD1153 /* AppDelegate.h */,
-				52B5999719E61B9800BD1153 /* AppDelegate.m */,
+				52B5999F19E61B9800BD1153 /* Main.storyboard */,
 				52B5999C19E61B9800BD1153 /* ViewController.h */,
 				52B5999D19E61B9800BD1153 /* ViewController.m */,
-				52B5999F19E61B9800BD1153 /* Main.storyboard */,
+				52B599D619E642E700BD1153 /* Model */,
 				52B599A219E61B9800BD1153 /* Images.xcassets */,
 				52B599A419E61B9800BD1153 /* LaunchScreen.xib */,
 				52B5999919E61B9800BD1153 /* Matchismo.xcdatamodeld */,
@@ -115,6 +113,8 @@
 		52B5999219E61B9800BD1153 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				52B5999619E61B9800BD1153 /* AppDelegate.h */,
+				52B5999719E61B9800BD1153 /* AppDelegate.m */,
 				52B5999319E61B9800BD1153 /* Info.plist */,
 				52B5999419E61B9800BD1153 /* main.m */,
 			);

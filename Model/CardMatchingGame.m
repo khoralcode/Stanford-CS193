@@ -52,32 +52,37 @@ static const int COST_TO_CHOOSE = 1;
 - (void) chooseCardAtIndex: (NSUInteger)index
 {
     Card *card = [self cardAtIndex:index];
-    if (!card.isMatched) {
+    NSLog(@"card is %@", [card contents ]);
+   
+    
+    if (!card.isMatched){
         if (card.isChosen){
-          
-        card.chosen = NO;
+            card.chosen = NO;
         }else{
                             // match against other card
             for (Card *otherCard in self.cards){
                 _pickResult = [NSString stringWithFormat:@"%@", [card contents]];
+               
                 if (otherCard.isChosen && !otherCard.isMatched){
-   _pickResult = [NSString stringWithFormat:@"%@ & %@ NO match, 2pt penalty", [otherCard contents],[card contents]];
-                   // else {_pickResult = ""};
-                
+   
                     int matchScore = [card match:@[otherCard]];
+                     
                     if (matchScore){
+                        _pickResult = [NSString stringWithFormat:@"%@ & %@ is a match, %i points!",[otherCard contents],[card contents], MATCH_BONUS];
                         self.score += matchScore * MATCH_BONUS;
                         card.matched = YES;
                         otherCard.matched =YES;
-                    }else {
+                    }else {_pickResult = [NSString stringWithFormat:@"%@ & %@ NO match, 2pt penalty", [otherCard contents],[card contents]];
                         self.score -= MISMATCH_PENALTY;
+                    //card.chosen = NO;
                         otherCard.chosen = NO;
-                    }
+                                            }
                 break;
                 }
             }
             self.score -= COST_TO_CHOOSE;
             card.chosen = YES;
+            
         }
     }
 }

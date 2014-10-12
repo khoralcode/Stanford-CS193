@@ -28,7 +28,7 @@
        else
        {_gameMode = 3;}
     
-  
+    //NSLog(@"%i", _gameMode);
     
 }
 
