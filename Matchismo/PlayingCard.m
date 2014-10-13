@@ -13,13 +13,15 @@
 -(int)match:(NSArray *)otherCards
 {
     int score = 0;
-    if ([otherCards count]==1){
+    if ([otherCards count]==2){
         PlayingCard *otherCard = [otherCards firstObject];
-       // PlayingCard *thirdCard = [otherCards lastObject];
-        if ([self.suit isEqualToString:otherCard.suit]){
-            //||[self.suit isEqualToString:thirdCard.suit]  ||(self.rank ==thirdCard.rank))
+        NSLog(@"otherCard %@", otherCard.contents);
+       PlayingCard *thirdCard = [otherCards objectAtIndex:2];
+        NSLog(@"ThirdCard %@", thirdCard.contents);
+        if ([self.suit isEqualToString:otherCard.suit]||[self.suit isEqualToString:thirdCard.suit] ){
+            //
             score =1;
-        }else if (self.rank ==otherCard.rank){
+        }else if (self.rank ==otherCard.rank||self.rank ==thirdCard.rank){
             score =4;
         }
     }

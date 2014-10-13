@@ -62,7 +62,8 @@ static const int COST_TO_CHOOSE = 1;
                             // match against other card
             for (Card *otherCard in self.cards){
                 _pickResult = [NSString stringWithFormat:@"%@", [card contents]];
-               
+                 NSLog(@"other card is %@", [otherCard contents ]);
+                
                 if (otherCard.isChosen && !otherCard.isMatched){
    
                     int matchScore = [card match:@[otherCard]];
@@ -72,20 +73,57 @@ static const int COST_TO_CHOOSE = 1;
                         self.score += matchScore * MATCH_BONUS;
                         card.matched = YES;
                         otherCard.matched =YES;
-                    }else {_pickResult = [NSString stringWithFormat:@"%@ & %@ NO match, 2pt penalty", [otherCard contents],[card contents]];
-                        self.score -= MISMATCH_PENALTY;
-                    //card.chosen = NO;
-                        otherCard.chosen = NO;
+                                    }
+                    }
+                }
+                                                }
+       
+        else
+        {
+            
+                        if (!card.isMatched)||(!otherCard.isMatched)
+                        {
+                            if (card.isChosen)||(otherCard.isChosen){
+                                card.chosen = NO;
+                                otherCard.chosen = NO;
+                            }
+                            else
+        {
+                        
+                for (Card *thirdCard in self.cards){
+                    
+                    
+                    if (thirdCard.isChosen && !thirdCard.isMatched){
+                            
+                            int matchScore = [card match:@[otherCard]];
+                            
+                            if (matchScore){
+                                _pickResult = [NSString stringWithFormat:@"%@ & %@ is a match, %i points!",[thirdCard contents],[card contents], MATCH_BONUS];
+                                self.score += matchScore * MATCH_BONUS;
+                                card.matched = YES;
+                                thirdCard.matched =YES;
                                             }
+                                                                    }
+                    
+                
+                                                    }
+         }
+                            else {
+                        _pickResult = [NSString stringWithFormat:@"%@ & %@ NO match, 2pt penalty", [otherCard contents],[card contents]];
+                        self.score -= MISMATCH_PENALTY;
+                        otherCard.chosen = NO;
+                        card.chosen = NO;
+                 }
                 break;
                 }
-            }
-            self.score -= COST_TO_CHOOSE;
-            card.chosen = YES;
             
         }
+            self.score -= COST_TO_CHOOSE;
+            card.chosen = YES;
     }
-}
+
+    }
+
 
 -(Card *) cardAtIndex:(NSUInteger)index
 {
