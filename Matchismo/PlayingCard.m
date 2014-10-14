@@ -10,22 +10,24 @@
 
 @implementation PlayingCard
 
--(int)match:(NSArray *)otherCards
+- (int)match:(NSArray *)otherCards
 {
     int score = 0;
-    if ([otherCards count]==2){
-        PlayingCard *otherCard = [otherCards firstObject];
-        NSLog(@"otherCard %@", otherCard.contents);
-       PlayingCard *thirdCard = [otherCards objectAtIndex:2];
-        NSLog(@"ThirdCard %@", thirdCard.contents);
-        if ([self.suit isEqualToString:otherCard.suit]||[self.suit isEqualToString:thirdCard.suit] ){
-            //
-            score =1;
-        }else if (self.rank ==otherCard.rank||self.rank ==thirdCard.rank){
-            score =4;
+    
+    if ([otherCards count] != 0) {
+        if ([otherCards count] == 1) {
+            PlayingCard *otherCard = [otherCards firstObject];
+            if ([self.suit isEqualToString:otherCard.suit]) {
+                return score = 1;
+            } else if (self.rank == otherCard.rank) {
+                return score = 4;
+            }
+        } else {
+            for (Card *otherCard in otherCards) score += [self match:@[otherCard]];
+            PlayingCard *otherCard = [otherCards firstObject];
+            score += [otherCard match:[otherCards subarrayWithRange:NSMakeRange(1, [otherCards count] - 1)]];
         }
     }
-    
     return score;
 }
 
