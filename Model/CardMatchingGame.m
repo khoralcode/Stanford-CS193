@@ -59,7 +59,7 @@ static const int COST_TO_CHOOSE = 1;
         if (card.isChosen){
             card.chosen = NO;
         }else{
-                            // match against other card
+                            // match against other card (or wait till 2nd card is flipped, before begining match evaluation)"if fliped card count <X, do nothing, else eval (aka run code below). That way you can make game mode as many cards as you want by changing the var X
             for (Card *otherCard in self.cards){
                 _pickResult = [NSString stringWithFormat:@"%@", [card contents]];
                 

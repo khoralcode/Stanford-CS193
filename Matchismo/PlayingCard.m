@@ -19,14 +19,16 @@
             PlayingCard *otherCard = [otherCards firstObject];
             if ([self.suit isEqualToString:otherCard.suit]) {
                 return score = 1;
-            } else if (self.rank == otherCard.rank) {
+            } else if (self.rank == otherCard.rank)
+            {
                 return score = 4;
             }
-        } else {
+        }
+        else {
             for (Card *otherCard in otherCards) score += [self match:@[otherCard]];
             PlayingCard *otherCard = [otherCards firstObject];
             score += [otherCard match:[otherCards subarrayWithRange:NSMakeRange(1, [otherCards count] - 1)]];
-        }
+        }//start here writing code for 3 card case match evalm"else...if ([otherCards count] == 2) from line 18"
     }
     return score;
 }
