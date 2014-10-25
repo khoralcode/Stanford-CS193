@@ -14,7 +14,8 @@
 {
     int score = 0;
     
-    if ([otherCards count] != 0) {
+    if ([otherCards count] != 0)// && gameMode is 2 card
+    {
         if ([otherCards count] == 1) {
             PlayingCard *otherCard = [otherCards firstObject];
             if ([self.suit isEqualToString:otherCard.suit]) {
@@ -28,7 +29,23 @@
             for (Card *otherCard in otherCards) score += [self match:@[otherCard]];
             PlayingCard *otherCard = [otherCards firstObject];
             score += [otherCard match:[otherCards subarrayWithRange:NSMakeRange(1, [otherCards count] - 1)]];
-        }//start here writing code for 3 card case match evalm"else...if ([otherCards count] == 2) from line 18"
+        }
+        /*
+         else if ([otherCards count] == 2) {
+         PlayingCard *otherCard = [otherCards firstObject];
+         PlayingCard *secondCard = [otherCards objectAtIndex:2];
+         if (([self.suit isEqualToString:otherCard.suit])&&([self.suit isEqualToString:secondCard.suit])) {
+         return score = 3;
+         } else if((self.rank == otherCard.rank)&&(self.rank == secondCard.rank))
+         {
+         return score = 12;
+         }
+         }
+         else {
+         for (Card *otherCard in otherCards) score += [self match:@[otherCard]];
+         PlayingCard *otherCard = [otherCards firstObject];
+         score += [otherCard match:[otherCards subarrayWithRange:NSMakeRange(1, [otherCards count] - 1)]];
+         */
     }
     return score;
 }
